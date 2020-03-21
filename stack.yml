@@ -1,0 +1,16 @@
+version: 1.0
+
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+
+configuration:
+  templates:
+    - name: vst-python-upstream-fastapi
+      source: https://github.com/vst/openfaas-templates#0.0.2
+
+functions:
+  xlsx-to-json:
+    lang: vst-python-upstream-fastapi
+    handler: ./xlsx-to-json
+    image: vehbisinan/of-xlsx-to-json:latest
