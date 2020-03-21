@@ -1,5 +1,7 @@
 # Convert .xlsx to .json
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/vst/of-xlsx-to-json)
+
 This repository provides an OpenFAAS function to convert uploaded `.xlsx` files to `JSON`.
 
 ## Deploy
